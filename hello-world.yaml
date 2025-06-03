@@ -1,7 +1,6 @@
-- name: hello world
-  hosts: local
-  connection: local # no need of username and password
-  tasks:
-  - name: print hello world
+- name: ping the server
+  hosts: frontend
+  tasks: # list of tasks
+  - name: ping the server
     ansible.builtin.debug:
-      msg: "Hello World sarath2"
+      
