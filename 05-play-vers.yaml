@@ -6,12 +6,12 @@
       DURATION:  10HR
       TRAINER: Sarath
     tasks:
-      - name: print course information
-        ansible.buitin.debug:
-        #vars reference should be surrounded by ""
+     - name: print course information
+       ansible.buitin.debug:
+       #vars reference should be surrounded by ""
           msg: "Hello {{ COURSE }}, Course Duration: {{ DURATION }}, Trainer is {{ TRAINER }}"
 
-      - name: print course information again
-        ansible.buitin.debug:
-         #vars reference should be surronded by ""
-          msg: "Hello {{ COURSE }}, Course Duration: {{ DURATION }}, Trainer is {{ TRAINER }}"
+     - name: print course information again
+       ansible.buitin.debug:
+       #vars reference should be surronded by ""
+         msg: "Hello {{ COURSE }}, Course Duration: {{ DURATION }}, Trainer is {{ TRAINER }}"
